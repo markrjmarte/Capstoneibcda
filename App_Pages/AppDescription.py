@@ -72,7 +72,7 @@ def app():
                 </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\CNN.png',use_column_width=True)
+    st.image('App Images/CNN.png',use_column_width=True)
     st.markdown("""
         <style>
             .topnav {
@@ -125,7 +125,7 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\HTW.PNG',use_column_width=True)
+    st.image('App Images/HTW.PNG',use_column_width=True)
     st.markdown("""
         <style>
             .topnav {
