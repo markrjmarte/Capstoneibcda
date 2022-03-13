@@ -115,9 +115,9 @@ def app():
                 </div>
         </body>
         """,unsafe_allow_html=True)
-    with st.expander("View Image Southern Rust"):
-        st.image('App Images/Sr_cycle.png',use_column_width=True)
-        st.image('App Images/Sr.png',use_column_width=True)
+         expand = st.expander("View Image Southern Rust")
+         expand.image('App Images/Sr_cycle.png',use_column_width=True)
+         expand.image('App Images/Sr.png',use_column_width=True)
     st.text('')
   
     #Eyespot
