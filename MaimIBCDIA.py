@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 from model import predict
 from streamlit_option_menu import option_menu
 
