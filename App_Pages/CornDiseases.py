@@ -2,10 +2,8 @@ import streamlit as st
 
  
 def app():
-    st.empty
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.empty()
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -61,9 +59,7 @@ def app():
         
     st.text('')
     #Southern Rust
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -125,9 +121,7 @@ def app():
     st.text('')
   
     #Eyespot
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -173,9 +167,7 @@ def app():
     st.text('')
     
     #Gray Leaf Spot
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -226,9 +218,7 @@ def app():
       
         
     #Tar Spot
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -281,9 +271,7 @@ def app():
     st.text('')
     
     #Nothern Leaf Blight
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -339,9 +327,7 @@ def app():
     st.text('')  
     
     #Common Rust
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
