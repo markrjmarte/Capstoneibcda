@@ -3,8 +3,7 @@ import streamlit as st
 def app():
 
     st.empty()
-    with st.container():
-         st.markdown("""
+    st.markdown("""
             <style>
                 .topnav {
                     background-color: #0ed145;
