@@ -1,5 +1,4 @@
 import streamlit as st
-from App_Pages import Home,Instruction,AppDescription,CornDiseases,Predict
 import streamlit.components.v1 as components
 from streamlit_option_menu import option_menu
 
@@ -47,15 +46,5 @@ choose = option_menu("", ["Home", "Instruction","Predict Image", "App Descriptio
 
 
 
-if choose == "Home":
-    Home.app()
-elif choose == "Predict Image":
-    Predict.app()
-elif choose == "App Description":
-    AppDescription.app()
-elif choose == "Corn Diseases":
-    CornDiseases.app()
-elif choose == "Instruction":
-    Instruction.app()
 
 
