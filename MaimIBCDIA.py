@@ -1,4 +1,5 @@
 import streamlit as st
+from App_Pages import Home,Instruction,AppDescription,CornDiseases,Predict
 from model import predict
 from streamlit_option_menu import option_menu
 
