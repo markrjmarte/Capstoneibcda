@@ -115,7 +115,8 @@ def app():
                 </div>
         </body>
         """,unsafe_allow_html=True)
-    with st.expander("View Image"):
+    ex = st.expander("View Image")
+    with ex:
         st.image('App Images/Sr_cycle.png',use_column_width=True)
         st.image('App Images/Sr.png',use_column_width=True)
     st.text('')
