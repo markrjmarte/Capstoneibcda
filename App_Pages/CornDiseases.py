@@ -115,9 +115,10 @@ def app():
                 </div>
         </body>
         """,unsafe_allow_html=True)
-         expand = st.expander()
-         expand.write("Yup")
-         expand.image('App Images/Sr.png',use_column_width=True)
+    my_expander = st.expander(label='View Image')
+    with my_expander:
+        st.image('App Images/Sr_cycle.png',use_column_width=True)
+        st.image('App Images/Sr.png',use_column_width=True)
     st.text('')
   
     #Eyespot
