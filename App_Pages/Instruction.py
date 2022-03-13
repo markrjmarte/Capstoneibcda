@@ -1,8 +1,10 @@
 import streamlit as st
  
 def app():
-    st.empty
-    st.markdown("""
+    st.empty()
+    c=st.container()
+    with c :
+        st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -37,8 +39,8 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I1.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I1.png',use_column_width=True)
+        st.markdown("""
         <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -58,8 +60,8 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I2.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I2.png',use_column_width=True)
+        st.markdown("""
         <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -79,8 +81,8 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I3.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I3.png',use_column_width=True)
+        st.markdown("""
         <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -100,8 +102,8 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I4.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I4.png',use_column_width=True)
+        st.markdown("""
         <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -121,12 +123,12 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I5.png',use_column_width=True)
-    st.text('')
-    st.text('')
-    st.text('')
-    st.text('')
-    st.markdown("""
+        st.image('App Images/I5.png',use_column_width=True)
+        st.text('')
+        st.text('')
+        st.text('')
+        st.text('')
+        st.markdown("""
         <style>
             .topnav {
                 background-color: #0ed145;
@@ -162,8 +164,8 @@ def app():
         </body>
         """,unsafe_allow_html=True)
 
-    st.image('App Images\I6.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I6.png',use_column_width=True)
+        st.markdown("""
             <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -183,8 +185,8 @@ def app():
             </div>
             </body>
             """,unsafe_allow_html=True)
-    st.image('App Images\I7.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I7.png',use_column_width=True)
+        st.markdown("""
         <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -204,8 +206,8 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I8.png',use_column_width=True)
-    st.markdown("""
+        st.image('App Images/I8.png',use_column_width=True)
+        st.markdown("""
         <style>
             .Paragraph {
                 background-color: #e1ffca;
@@ -225,24 +227,5 @@ def app():
             </div>
         </body>
         """,unsafe_allow_html=True)
-    st.image('App Images\I9.png',use_column_width=True)
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
-       
-   
-    
-    
+        st.image('App Images/I9.png',use_column_width=True)
     
