@@ -3,9 +3,7 @@ import streamlit as st
  
 def app():
     st.empty()
-    c=st.container()
-    with c :
-        st.markdown("""
+    st.markdown("""
         <style>
             #site_content{
                     width: 100%;
