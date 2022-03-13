@@ -115,8 +115,8 @@ def app():
                 </div>
         </body>
         """,unsafe_allow_html=True)
-         expand = st.expander("View Image Southern Rust")
-         expand.image('App Images/Sr_cycle.png',use_column_width=True)
+         expand = st.expander()
+         expand.write("Yup")
          expand.image('App Images/Sr.png',use_column_width=True)
     st.text('')
   
