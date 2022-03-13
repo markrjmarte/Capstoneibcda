@@ -1,7 +1,7 @@
 import streamlit as st
  
 def app():
-    st.empty()
+    st.empty
     st.markdown("""
         <style>
             .topnav {
