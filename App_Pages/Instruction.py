@@ -3,40 +3,40 @@ import streamlit as st
 def app():
     st.empty()
     st.markdown("""
-        <style>
-            .topnav {
-                background-color: #0ed145;
-                overflow: hidden;
-            }
-            .topnav a {
-                display: block;
-                color: #f2f2f2;
-                text-align: Left;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 22px;
-            }
-            .Paragraph {
-                background-color: #e1ffca;
-                overflow: hidden;
-            }
-            .Paragraph a {
-                display: block;
-                color: black;
-                text-align: Left;
-                padding: 14px 16px;
-                font-size: 17px;
-            }
-        </style>
-        <body>
-            <div class="topnav">
-                <a>How to open streamlit file?</a>
-            </div>
-            <div class="Paragraph">
-                <a>1.First locate the file location.</a>
-            </div>
-        </body>
-        """,unsafe_allow_html=True)
+          <style>
+              .topnav {
+                  background-color: #0ed145;
+                  overflow: hidden;
+              }
+              .topnav a {
+                  display: block;
+                  color: #f2f2f2;
+                  text-align: Left;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 22px;
+              }
+              .Paragraph {
+                  background-color: #e1ffca;
+                  overflow: hidden;
+              }
+              .Paragraph a {
+                  display: block;
+                  color: black;
+                  text-align: Left;
+                  padding: 14px 16px;
+                  font-size: 17px;
+              }
+          </style>
+          <body>
+              <div class="topnav">
+                  <a>How to open streamlit file?</a>
+              </div>
+              <div class="Paragraph">
+                  <a>1.First locate the file location.</a>
+              </div>
+          </body>
+          """,unsafe_allow_html=True)
     st.image('App Images\I1.png',use_column_width=True)
     st.markdown("""
         <style>
