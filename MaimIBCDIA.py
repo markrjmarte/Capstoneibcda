@@ -46,9 +46,7 @@ choose = option_menu("", ["Home", "Instruction","Predict Image", "App Descriptio
 
 if choose == "Home":
     st.empty()
-    conta = st.container()
-    with conta:
-         st.markdown("""
+    st.markdown("""
             <style>
                 .topnav {
                     background-color: #0ed145;
