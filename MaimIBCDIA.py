@@ -16,7 +16,7 @@ st.markdown('<style>body{text-align: center;}</style>', unsafe_allow_html=True)
 
 hide_menu_style = """
     <style>
-    MainMenu {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
     footer {visibility: visible;}
     
     footer:before{
