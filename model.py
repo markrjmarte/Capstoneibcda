@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 from keras.preprocessing.image import load_img, img_to_array
-from tensorflow import tf
+import tensorflow as tf
 
 def predict(img):
     IMAGE_SIZE = 64
