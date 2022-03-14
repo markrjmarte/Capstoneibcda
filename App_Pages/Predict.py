@@ -38,5 +38,5 @@ def app():
                             </div>
                         </body>
                         """,unsafe_allow_html=True)
-             st.info(f'Classification: {prediction_class}, Probability: {prediction_probability}%')
+            st.info(f'Classification: {prediction_class}, Probability: {prediction_probability}%')
              
