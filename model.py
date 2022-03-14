@@ -14,7 +14,7 @@ def predict(img):
     'Southern Rust',
     'Tar Spot',
     'Healthy']
-    model = keras.models.load_model('Model')
+    model = keras.models.load_model('Capstoneibcda/Model')
     img = Image.open(img)
     img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
     img = img_to_array(img)
