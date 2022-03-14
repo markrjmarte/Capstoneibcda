@@ -16,9 +16,8 @@ def app():
         if predict_button:
             st.text('')
             st.text('')
-            try:
-                prediction_class, prediction_probability = predict(img)
-                st.markdown("""
+            prediction_class, prediction_probability = predict(img)
+            st.markdown("""
                         <style>
                             .topnav {
                                 background-color: #0ed145;
@@ -39,8 +38,8 @@ def app():
                             </div>
                         </body>
                         """,unsafe_allow_html=True)
-                a = f'Classification: {prediction_class}, Probability: {prediction_probability}%'
-                html_pre = f"""
+             a = f'Classification: {prediction_class}, Probability: {prediction_probability}%'
+             html_pre = f"""
                     <style>
                     p.a{{
                         padding: 14px 5px;
@@ -50,42 +49,5 @@ def app():
                     </style>
                     <p class="a">{a}</p>
                     """
-                st.markdown(html_pre,unsafe_allow_html=True)
-            except ValueError:
-                st.markdown("""
-                        <style>
-                            .topnav {
-                                background-color: #ff4b4b;
-                                overflow: hidden;
-                            }
-                            .topnav a {
-                                display: block;
-                                color: #f2f2f2;
-                                text-align: center;
-                                padding: 14px 16px;
-                                text-decoration: none;
-                                font-size: 22px;
-                            }
-                            .Paragraph {
-                                overflow: hidden;
-                                background-color: #e1ffca;
-                            }
-                            .Paragraph a {
-                                display: block;
-                                color: Black;
-                                text-align: Center;
-                                padding: 14px 16px;
-                                font-size: 17px;
-                            }
-                        </style>
-                        <body>
-                            <div class="topnav">
-                                <a>Invalid Input!</a>
-                            </div>
-                            <div class="Paragraph">
-                                <a><p>Sorry, the image you have inputed is invalid for image reshaping and object detection. 
-                                <p>Please select another image. Thank you!</p></a>
-                             </div>
-                        </body>
-                        """,unsafe_allow_html=True)
-        
+             st.markdown(html_pre,unsafe_allow_html=True)
+           
