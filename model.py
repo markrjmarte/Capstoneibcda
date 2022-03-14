@@ -14,8 +14,7 @@ def predict(img):
     'Southern Rust',
     'Tar Spot',
     'Healthy']
-    model_path = 'Model'
-    model = load_model(model_path)
+    model = load_model('Model')
     img = Image.open(img)
     img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
     img = img_to_array(img)
