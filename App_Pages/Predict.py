@@ -38,16 +38,5 @@ def app():
                             </div>
                         </body>
                         """,unsafe_allow_html=True)
-             a = f'Classification: {prediction_class}, Probability: {prediction_probability}%'
-             html_pre = f"""
-                    <style>
-                    p.a{{
-                        padding: 14px 5px;
-                        font: bold 20px Arial;
-                        background-color: #e1ffca;
-                    }}
-                    </style>
-                    <p class="a">{a}</p>
-                    """
-             st.markdown(html_pre,unsafe_allow_html=True)
-           
+             st.info(f'Classification: {prediction_class}, Probability: {prediction_probability}%')
+             
