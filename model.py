@@ -14,7 +14,7 @@ def predict(img):
     'Southern Rust',
     'Tar Spot',
     'Healthy']
-    model_path = r'Capstoneibcda/Model'
+    model_path = r'Capstoneibcda/DataModel'
     model = load_model(model_path)
     img = Image.open(img)
     img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
