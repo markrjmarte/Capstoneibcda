@@ -17,26 +17,6 @@ def app():
             st.text('')
             st.text('')
             prediction_class, prediction_probability = predict(img)
-            st.markdown("""
-                        <style>
-                            .topnav {
-                                background-color: #0ed145;
-                                overflow: hidden;
-                            }
-                            .topnav a {
-                                display: block;
-                                color: #f2f2f2;
-                                text-align: center;
-                                padding: 14px 16px;
-                                text-decoration: none;
-                                font-size: 22px;
-                            }
-                        </style>
-                        <body>
-                            <div class="topnav">
-                                <a>Prediction</a>
-                            </div>
-                        </body>
-                        """,unsafe_allow_html=True)
+            st.subheader('Predict')
             st.info(f'Classification: {prediction_class}, Probability: {prediction_probability}%')
              
