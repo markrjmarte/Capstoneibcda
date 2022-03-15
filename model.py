@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 from keras.preprocessing.image import load_img, img_to_array
-import tensorflow as tf
+from keras.models import load_model
 
 def predict(img):
     IMAGE_SIZE = 64
@@ -14,7 +14,8 @@ def predict(img):
     'Southern Rust',
     'Tar Spot',
     'Healthy']
-    model = tf.keras.models.load_model('Model')
+    model_path = r'Model'
+    model = load_model(model_path)
     img = Image.open(img)
     img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
     img = img_to_array(img)
