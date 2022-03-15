@@ -14,7 +14,7 @@ def predict(img):
     'Southern Rust',
     'Tar Spot',
     'Healthy']
-    model_path = r'Model'
+    model_path = r'DataModel'
     model = load_model(model_path)
     img = Image.open(img)
     img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
