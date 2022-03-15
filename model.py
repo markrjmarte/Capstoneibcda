@@ -2,6 +2,9 @@ import numpy as np
 from PIL import Image
 from keras.preprocessing.image import load_img, img_to_array
 from keras.models import load_model
+import requests
+
+
 
 def predict(img):
     IMAGE_SIZE = 64
@@ -14,7 +17,13 @@ def predict(img):
     'Southern Rust',
     'Tar Spot',
     'Healthy']
-    model_path = r'DataModel'
+    
+    response = requests.get(https://github.com/markrjmarte/Capstoneibcda/tree/main/DataModel)
+    response.raise_for_status()  
+    if response.status_code != 204:
+        return response.json()
+    
+    model_path = response 
     model = load_model(model_path)
     img = Image.open(img)
     img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
