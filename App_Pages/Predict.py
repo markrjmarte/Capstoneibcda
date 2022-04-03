@@ -14,5 +14,5 @@ def app():
         col3.text("")
         predict_button = st.button(label='Predict')
         if predict_button :
-            st.write(image.name)
+            st.write(img.name)
              
