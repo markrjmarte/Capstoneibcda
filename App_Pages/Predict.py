@@ -13,10 +13,5 @@ def app():
             st.image(image=img.read(), caption='Uploaded image', use_column_width = True, channels = "RGB")
         col3.text("")
         predict_button = st.button(label='Predict')
-        if predict_button:
-            st.text('')
-            st.text('')
-            prediction_class, prediction_probability = predict(img)
-            st.subheader('Predict')
-            st.info(f'Classification: {prediction_class}, Probability: {prediction_probability}%')
+        st.Write(image.name)
              
