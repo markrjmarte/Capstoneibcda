@@ -1,4 +1,5 @@
 import streamlit as st
+from Database import * 
 from model import predict
 
  
