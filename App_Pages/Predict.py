@@ -1,5 +1,6 @@
 import streamlit as st
 from Database import * 
+import pandas as pd
 from model import predict
 
  
@@ -16,4 +17,8 @@ def app():
         predict_button = st.button(label='Predict')
         if predict_button :
             st.write(img.name)
+            add_data(img)
+            result = view_all_data()
+            clean_df = pd.DataFrame(result,columns=["Image"])
+        
              
