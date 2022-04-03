@@ -3,4 +3,5 @@ tensorflow==2.3.1
 numpy==1.18.5
 Pillow==8.0.1
 Keras==2.4.3
+sqlite = 
 streamlit-option-menu==0.3.2
