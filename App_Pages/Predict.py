@@ -13,5 +13,5 @@ def app():
             st.image(image=img.read(), caption='Uploaded image', use_column_width = True, channels = "RGB")
         col3.text("")
         predict_button = st.button(label='Predict')
-        st.Write(image.name)
+        st.Write("Image")
              
