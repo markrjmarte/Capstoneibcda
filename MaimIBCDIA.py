@@ -20,7 +20,7 @@ hide_menu_style = """
     footer {visibility: visible;}
     
     footer:before{
-        content: 'Team Padayon @ 2021-2022: IBCDI';
+        content: 'Programmer @ Markrjmarte9@gmail.com';
         color: #FF4B4B;
         display: block;
         position: relative;
